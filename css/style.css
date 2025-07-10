@@ -5,6 +5,7 @@
     --light: #f8f9fa;
     --accent: #e74c3c;
     --success: #27ae60;
+    --base-rem: 16px;
 }
 
 * {
@@ -36,15 +37,15 @@ h5 {
 
 /* nav */
 .navbar {
-    padding: 15px 0;
+    padding: 0.9375rem 0;
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.9375rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: var(--primary);
 }
 
@@ -54,7 +55,7 @@ h5 {
 
 .nav-link {
     font-weight: 500;
-    margin: 0 10px;
+    margin: 0 0.625rem;
     color: var(--dark);
     position: relative;
     transition: color 0.3s;
@@ -67,10 +68,10 @@ h5 {
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -0.3125rem;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 0.1875rem;
     background-color: var(--secondary);
     transition: width 0.3s ease;
 }
@@ -82,8 +83,8 @@ h5 {
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-    padding: 10px 25px;
-    border-radius: 30px;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 1.875rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -91,16 +92,16 @@ h5 {
 .btn-primary:hover {
     background-color: #144a75;
     border-color: #144a75;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(26, 93, 143, 0.3);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(26, 93, 143, 0.3);
 }
 
 .btn-secondary {
     background-color: var(--secondary);
     border-color: var(--secondary);
     color: #fff;
-    padding: 10px 25px;
-    border-radius: 30px;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 1.875rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -108,10 +109,9 @@ h5 {
 .btn-secondary:hover {
     background-color: #e0a300;
     border-color: #e0a300;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(248, 180, 0, 0.3);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.3125rem 0.9375rem rgba(248, 180, 0, 0.3);
 }
-
 
 /* Hero Section */
 .hero {
@@ -140,21 +140,21 @@ h5 {
 .hero-content {
     position: relative;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .hero h1 {
     font-size: 2.75rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     animation: fadeInUp 1s ease;
 }
 
 .hero p {
     font-size: 1.2rem;
-    max-width: 600px;
-    margin-bottom: 30px;
+    max-width: 37.5rem;
+    margin-bottom: 1.875rem;
     animation: fadeInUp 1s ease 0.2s;
     animation-fill-mode: both;
 }
@@ -168,7 +168,7 @@ h5 {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(1.875rem);
     }
 
     to {
@@ -179,19 +179,19 @@ h5 {
 
 /* Features Section */
 .features {
-    padding: 100px 0;
+    padding: 6.25rem 0;
     background-color: var(--light);
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .section-title h2 {
     position: relative;
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
 }
 
 .section-title h2::after {
@@ -200,21 +200,21 @@ h5 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
+    width: 5rem;
+    height: 0.25rem;
     background-color: var(--secondary);
 }
 
 .feature-card {
     background: white;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 0.625rem;
+    padding: 1.875rem;
+    box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.05);
     transition: all 0.4s ease;
     height: 100%;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .feature-card::before {
@@ -222,7 +222,7 @@ h5 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 5px;
+    width: 0.3125rem;
     height: 0;
     background-color: var(--primary);
     transition: height 0.4s ease;
@@ -233,14 +233,14 @@ h5 {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     transition: transform 0.3s ease;
 }
 
@@ -249,22 +249,21 @@ h5 {
     color: var(--secondary);
 }
 
-
 /* About Us Section */
 .about-us {
-    padding: 100px 0;
+    padding: 6.25rem 0;
     background-color: #fff;
 }
 
 .about-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .about-title h2 {
     position: relative;
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
     color: var(--primary);
 }
 
@@ -274,16 +273,16 @@ h5 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
+    width: 5rem;
+    height: 0.25rem;
     background-color: var(--secondary);
 }
 
 .about-content {
     background: white;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 0.625rem;
+    padding: 2.5rem;
+    box-shadow: 0 0.3125rem 1.875rem rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -293,30 +292,30 @@ h5 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 5px;
+    width: 0.3125rem;
     height: 100%;
     background: linear-gradient(to bottom, var(--primary), var(--secondary));
 }
 
 .about-point {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     position: relative;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .about-point h3 {
     color: var(--primary);
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     position: relative;
 }
 
 .about-point h3::before {
     content: '';
     position: absolute;
-    left: -20px;
-    top: 12px;
-    width: 10px;
-    height: 10px;
+    left: -1.25rem;
+    top: 0.75rem;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
     background-color: var(--secondary);
 }
@@ -328,7 +327,7 @@ h5 {
 
 /* Core Values Section */
 .core-values {
-    padding: 100px 0;
+    padding: 6.25rem 0;
     background-color: var(--light);
     position: relative;
     overflow: hidden;
@@ -341,14 +340,14 @@ h5 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
     opacity: 0.05;
     z-index: 0;
 }
 
 .values-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
     position: relative;
     z-index: 1;
 }
@@ -356,7 +355,7 @@ h5 {
 .values-title h2 {
     position: relative;
     display: inline-block;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
 }
 
 .values-title h2::after {
@@ -365,41 +364,41 @@ h5 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
+    width: 5rem;
+    height: 0.25rem;
     background-color: var(--secondary);
 }
 
 .value-card {
     background: white;
-    border-radius: 10px;
-    padding: 40px 30px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 0.625rem;
+    padding: 2.5rem 1.875rem;
+    box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     height: 100%;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     text-align: center;
-    border-top: 4px solid var(--primary);
+    border-top: 0.25rem solid var(--primary);
     position: relative;
     z-index: 1;
 }
 
 .value-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.625rem);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.1);
 }
 
 .value-icon {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 25px;
-    font-size: 32px;
+    margin: 0 auto 1.5625rem;
+    font-size: 2rem;
     color: white;
     transition: all 0.3s ease;
 }
@@ -421,10 +420,10 @@ h5 {
 }
 
 .value-card h3 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: var(--dark);
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
 }
 
 .value-card h3::after {
@@ -433,8 +432,8 @@ h5 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
+    width: 3.125rem;
+    height: 0.1875rem;
     background-color: var(--secondary);
 }
 
@@ -445,7 +444,7 @@ h5 {
 
 /* CTA Section */
 .cta {
-    padding: 80px 0;
+    padding: 5rem 0;
     background: linear-gradient(135deg, var(--primary) 0%, #144a75 100%);
     color: white;
     text-align: center;
@@ -453,12 +452,12 @@ h5 {
 
 .cta h2 {
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .cta p {
-    max-width: 700px;
-    margin: 0 auto 30px;
+    max-width: 43.75rem;
+    margin: 0 auto 1.875rem;
     font-size: 1.1rem;
 }
 
@@ -466,15 +465,15 @@ h5 {
 .footer {
     background-color: var(--dark);
     color: rgba(255, 255, 255, 0.8);
-    padding: 70px 0 0;
+    padding: 4.375rem 0 0;
 }
 
 .footer-title {
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
     font-size: 1.3rem;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .footer-title::after {
@@ -482,13 +481,13 @@ h5 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50px;
-    height: 3px;
+    width: 3.125rem;
+    height: 0.1875rem;
     background-color: var(--secondary);
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     list-style: none;
 }
 
@@ -501,7 +500,7 @@ h5 {
 
 .footer-links a:hover {
     color: var(--secondary);
-    padding-left: 8px;
+    padding-left: 0.5rem;
 }
 
 .footer-links a::before {
@@ -509,7 +508,7 @@ h5 {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     position: absolute;
-    left: -15px;
+    left: -0.9375rem;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
@@ -518,20 +517,20 @@ h5 {
 
 .footer-links a:hover::before {
     opacity: 1;
-    left: -10px;
+    left: -0.625rem;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
@@ -540,20 +539,20 @@ h5 {
 
 .social-links a:hover {
     background-color: var(--secondary);
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
 }
 
 .footer-bottom {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 1.25rem 0;
+    margin-top: 3.125rem;
     text-align: center;
 }
 
 
 .animate-on-scroll {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(1.875rem);
     transition: all 0.8s ease;
 }
 
@@ -573,7 +572,7 @@ h5 {
     }
 
     .about-content {
-        padding: 30px;
+        padding: 1.875rem;
     }
 }
 
@@ -591,7 +590,7 @@ h5 {
     }
 
     .about-content {
-        padding: 20px 15px 20px 25px;
+        padding: 1.25rem 0.9375rem 1.25rem 1.5625rem;
     }
 }
 
@@ -601,11 +600,11 @@ h5 {
     }
 
     .navbar-brand {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .btn {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 }
